@@ -1,0 +1,249 @@
+﻿@model bist.Models.FinancialDataViewModel
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--
+
+    Template 2091 Ziggy
+
+    http://www.tooplate.com/view/2091-ziggy
+
+    -->
+    <title>Hisse Fiyat Tahmini</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="site/css/bootstrap.min.css">
+    <link rel="stylesheet" href="site/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="site/css/fontAwesome.css">
+    <link rel="stylesheet" href="site/css/tooplate-style.css">
+
+    <script src="site/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+
+
+    <section class="first-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-content">
+                        <h2 style="text-transform:capitalize;">Sitemize Hoş Geldiniz</h2>
+                        <div class="line-dec"></div>
+                        <span style="text-transform:capitalize;">"Burada bulunan tahminler tamamen test amaçlı olup kesinlikle <b>Yatırım Tavsiyesi Değildir!</b>"</span>
+                        <br />
+                        <a style="margin-top:10px; font-size:20px;" class="btn btn-success" href="@Url.Action("Dashboard","Home")">Hisse Fiyat Tahmini Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="site/img/dolar.png" alt="dolar">
+                        </div>
+                        <h2>Dolar</h2>
+                        <p style="font-size:20px;"><b>@Model.TlDolar</b></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="site/img/euro.png" alt="euro">
+                        </div>
+                        <h2>Euro</h2>
+                        <p style="font-size:20px;"><b>@Model.TlEuro</b></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="site/img/altin.png" alt="altın">
+                        </div>
+                        <h2>Altın</h2>
+                        <p style ="font-size:20px;"><b>@Model.TlAltin</b></p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="service-item">
+                        <div class="icon">
+                            <img src="site/img/bist.png" alt="bist">
+                        </div>
+                        <h2>Borsa İstanbul</h2>
+                        <p style="font-size:20px;"><b>@Model.BorsaIstanbulXu100</b></></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="third-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="left-image col-md-4">
+                        <img src="site/img/hisse.png" alt="">
+                    </div>
+                    <div class="right-text col-md-8">
+                        <h4><em>Fiyat Tahmin Analizi</em><br>Nasıl Yapılır?</h4>
+                        <p style="text-align:justify; font-size:16px;"> Sitemiz yapay zeka tekniklerini kullanarak <b>Borsa İstanbul</b>'daki Ana Pazar platformunda yer alan günlük ve haftalık işlem hacmi sıralamasına göre belirli potansiyele ulaşmış belli hisselerin sonraki gün için fiyat tahmini yapmaktadır. Hisse fiyat tahmini için ana sayfada veya aşağıdaki butonu kullanabilirsiniz. Tahmin yaptırabilmek için sitemize üye olmanız ve oturum açmanız gerekir. Sitemize üye olmak ücretsizdir.</p>
+                        <a style="margin-top:10px; font-size:20px;" class="btn btn-danger" href="@Url.Action("Dashboard","Home")">Hisse Fiyat Tahmini Yap</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fourth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item first-item">
+                        <div class="image">
+                            <a href="site/img/yapay.jpeg" data-lightbox="image-1"><img src="site/img/yapay2.jpeg"></a>
+                        </div>
+                        <div class="text">
+                            <span>Finansal Tahmin</span>
+                            <h4>Yapay Zeka</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item second-item">
+                        <div class="image">
+                            <a href="site/img/asp.jpeg" data-lightbox="image-1"><img src="site/img/asp2.jpeg"></a>
+                        </div>
+                        <div class="text">
+                            <span>Web Arayüzü</span>
+                            <h4>Asp.Net Core</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="portfolio-item third-item">
+                        <div class="image">
+                            <a href="site/img/borsa.jpeg" data-lightbox="image-1"><img src="site/img/borsa2.jpeg"></a>
+                        </div>
+                        <div class="text">
+                            <span>Endeks Verileri</span>
+                            <h4>Borsa İstanbul</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="send-to-portfolio">
+                        <span>Daha fazlasını görmek ister misiz?</span>
+                        <div class="primary-button">
+                            <a href="portfolio-page.html">Galeriye Göz Atın</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fivth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="left-text col-md-8">
+                        <h4><em>Lütfen Dikkat</em><br>Yasal Yükümlülük ve YTD Hakkında</h4>
+                        <p>Bu site finansal bir tahmin amacıyla yapay zeka ve makine öğrenmesi tekniklerini kullanmaktadır. Bu kapsamda üye olan kullanıcılar sitemize ait yasal yükümlülükleri ve kullanım şartlarını kabul etmiş sayılır. Buradaki rapor veya sonuçlar herhangi bir yatırım tavsiyesi içermez. Buradan elde edilen sonuçlara göre yatırım yapmamamız gerektiğini önemle vurgularız. Finansal bir kayıpta sitemiz kesinlikle sorumlu değildir</p>
+                    </div>
+                    <div class="right-image col-md-4">
+                        <img src="site/img/atention.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sixth-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <form id="contact" action="" method="post">
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <input name="name" type="text" class="form-control" id="name" placeholder="Adınız ve Soyadınız" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-6">
+                                <fieldset>
+                                    <input name="email" type="email" class="form-control" id="email" placeholder="Email Adresiniz" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Mesajınız" required></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-md-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="btn">Gönder</button>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="right-info">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-envelope"></i>tezkontrolsistemi@gmail.com</a></li>
+                            <li><a href="#"><i class="fa fa-phone"></i>+90 000 000 00 00</a></li>
+                            <li><a href="#"><i class="fa fa-map-marker"></i>Fırat Üniversitesi / Elazığ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                    <p>
+                        Copyright &copy; 2023 Bitirme Projesi
+
+                        | Design: Ahmet ÇEKİN
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="site/js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="site/js/vendor/bootstrap.min.js"></script>
+
+    <script src="site/js/plugins.js"></script>
+    <script src="site/js/main.js"></script>
+
+</body>
+</html>
